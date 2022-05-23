@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import { useState } from "react"
+import { GlobalStyle } from "../styles/global"
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+export default function MyApp({ Component, pageProps }) {
+  const [isDarkTheme, setIsDarkTheme] = useState(true)
+
+  return (
+    <GlobalStyle isDarkTheme={isDarkTheme}>
+
+      <Component {...pageProps} setIsDarkTheme={setIsDarkTheme} isDarkTheme={isDarkTheme} />
+    </GlobalStyle>
+
+  )
+
 }
-
-export default MyApp
