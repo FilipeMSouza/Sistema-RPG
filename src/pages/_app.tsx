@@ -6,10 +6,10 @@ export default function MyApp({ Component, pageProps }) {
   const [isDarkTheme, setIsDarkTheme] = useState(true)
 
   return (
-    <GlobalStyle isDarkTheme={isDarkTheme}>
-
+    <>
       <Component {...pageProps} setIsDarkTheme={setIsDarkTheme} isDarkTheme={isDarkTheme} />
-    </GlobalStyle>
+      <GlobalStyle isDarkTheme={isDarkTheme}/>
+    </>
 
   )
 

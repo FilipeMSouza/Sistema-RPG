@@ -7,7 +7,7 @@ interface HomeProps{
 
 export default function Home({setIsDarkTheme, isDarkTheme}:HomeProps) {
   return (
-   <Header/>
+   <Header setIsDarkTheme={setIsDarkTheme } isDarkTheme={isDarkTheme}/>
    
   )
 }
