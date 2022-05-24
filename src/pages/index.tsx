@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "../components/Header";
 
-import {InputField, LoginFields, RadialButtons, SingInBtn, SingUpBtn } from "./styles/home.module";
+import {InputField, LoginFields, RadialButtons, SingInBtn, SingUpBtn } from "./styles/home";
 
 interface HomeProps {
   setIsDarkTheme: (Theme) => boolean;

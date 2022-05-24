@@ -22,7 +22,7 @@ export const InputField = styled.input <Props>`
   text-align: center;
 `;
 
- export const LoginFields = styled.div`
+ export const LoginFields = styled.form`
   display: flex;
   flex-direction: column;
   

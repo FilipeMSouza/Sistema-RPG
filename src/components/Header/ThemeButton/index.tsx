@@ -1,4 +1,4 @@
-import { ButtonTheme } from "./styles.module";
+import { ButtonTheme } from "./styles";
 import {MdOutlineLightMode, MdOutlineModeNight } from 'react-icons/md';  
 
 interface ThemeButtonProps{
