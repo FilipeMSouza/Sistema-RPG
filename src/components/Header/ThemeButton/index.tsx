@@ -8,7 +8,7 @@ interface ThemeButtonProps{
 export default function ThemeButton({setIsDarkTheme, isDarkTheme}:ThemeButtonProps){
   return(
     <>
-     <ButtonTheme isTheme={isDarkTheme} onClick={()=> setIsDarkTheme(!isDarkTheme)}>
+     <ButtonTheme isDarkTheme={isDarkTheme} onClick={()=> setIsDarkTheme(!isDarkTheme)}>
        {isDarkTheme? <MdOutlineModeNight/> : <MdOutlineLightMode/> }
      </ButtonTheme>
     </>

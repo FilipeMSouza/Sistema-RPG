@@ -10,10 +10,13 @@ export const GlobalStyle = createGlobalStyle<GlobalStyle>`
   //Dark therm
   --Dark-bg: #15181C;
   --Dark-theme-button-background: #23262A;
+  --Dark-Shadow: rgba(21, 24, 28, 0.25);
 
   //Light theme
   --Light-bg: #E0E5EC;
   --Light-theme-button-background: #E0E5EC;
+  --Light-Shadow: rgba(229, 229, 229, 0.25);
+
 
   //Common Colors
   --Life-bar: #0CF25D;
@@ -34,7 +37,7 @@ export const GlobalStyle = createGlobalStyle<GlobalStyle>`
 *{
 
   body{ 
-    background: ${(props)=> props.isDarkTheme ? 'var(--Dark-bg)' :  'var(--Light-bg)' }
+    background: ${(props)=> props.isDarkTheme ? 'var(--Dark-bg)' :  'var(--Light-bg)' };
   }
 }
 `
